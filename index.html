@@ -7,51 +7,80 @@
   <link rel="stylesheet" href="output.css">
   <title>Adbrotisers</title>
   <style>
-    @font-face {
-      font-family: 'poppins';
-      src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
-           url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    }
+@font-face {
+    font-family: 'poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
+         url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+      
 
-    @keyframes verticalGradientAnimation {
-      0% {
-        background-position: 120% 0%;
-      }
-      100% {
-        background-position: 0% 120%;
-      }
-    }
-    
-    .gradient-text {
-      background: linear-gradient(transparent, white);
-      background-size: 100% 200%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: verticalGradientAnimation 3s ease-in forwards;
-    }
-  </style>
+  @keyframes verticalGradientAnimation {
+            0% {
+                background-position: 120% 0%;
+            }
+            100% {
+                background-position: 0% 120%;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(transparent, white);
+            background-size: 100% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: verticalGradientAnimation 3s ease-in forwards;
+        }
+        @media (max-width: 767px) {
+  .hide-on-small-screen {
+    display: none;
+  }
+}
+
+    </style>
 </head>
-<body class="bg-blue-800 font-poppins">
-  <nav class="bg-transparent pt-3 pr-9">
-    <ul class="container flex justify-end space-x-5 top-3 font-semibold text-xl text-white tracking-wide">
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">home</li>
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">about</li>
+<body class="bg-blue-800 font-poppins" style="font-family: 'poppins';">
+  <nav class=" bg-transparent  pt-3 pr-9 ">
+    <ul class=" container flex justify-end space-x-5 top-3 font-semibold text-[18px] text-white  tracking-[-0.03em] " >
+      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110 " >home</li>
+      <li class= "hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">about</li>
       <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">services</li>
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">contact</li>
+      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110" >contact</li>
     </ul>
-  </nav>
+  </nav> 
   
-  <div class="relative text-center">
-    <h1 class="absolute inset-x-0 top-1/2 -translate-y-1/2 mt-28 text-5xl font-bold text-white">ADBROTISERS</h1>
-    <p class="absolute inset-x-0 top-1/2 -translate-y-1/2 mt-36 text-white text-lg gradient-text">WE HELP YOU EXIST LOUD</p>
+  <div class=" relative">
+    <h1 class="absolute inset-x-0 top-1/2 text-center transform -translate-y-1/2 mt-[180px] text-[75px] font-bold   text-white z-10 " style="font-family:poppins;">ADBROTISERS</h1>
+    <p class="absolute inset-x-0 top-1/2 text-center transform -translate-y-1/2 mt-[230px] ml-[255px] text-white text-[19px] gradient-text z-10  ">WE HELP YOU EXIST LOUD</p>
   </div>
     
-  <img class="max-w-40 absolute top-28 left-16" src="images/Untitled design (2).png" alt="">
+  <img class="max-w-40 absolute hide-on-small-screen z-10 " style="margin-left: 75px; margin-top:90px ;" src="images/Untitled design (2).png" alt="">
     
-  <div class="relative flex justify-center">
-    <p class="absolute text-center font-semibold text-white text-lg tracking-wide mt-80">we aim to bring great results for our clients <br> through our creativity and dedication</p>
+  <div class="relative flex items-center justify-center">
+    <p class="absolute text-center font-semibold  text-white text-[19px] tracking-widest z-10 " style="margin-top: 750px; letter-spacing: 0.4px;" >we aim to bring great results for our clients <br>
+      through our
+      creativity and dedication</p>
   </div>
+  <div class="bg-cover bg-center z-0 absolute ">
+      <img class="ml-30 " src="images/background (1).svg" alt="">
+    
+    </div>
+    <div class="flex justify-center flex-wrap ">
+    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 mt-[520px] shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
+      <h1 class="font-bold text-white text-[18px]">ARTIST MANAGEMENT</h1>
+    </div>
+    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 mt-[520px] shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
+      <h1 class="font-bold text-white text-[18px]">INFLUENCER MARKETING</h1>
+    </div>
+    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 lg:mt-[520px] mt-6 shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
+      <h1 class="font-bold text-white text-[18px]">ADVERTISING AGENCY</h1>
+    </div>
+    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 lg:mt-[520px] mt-6 shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
+      <h1 class="font-bold text-white text-[18px]">DIGITAL MARKETING</h1>
+    </div>
+    </div>
+    </div>
 
-
+   <footer class="fixed bottom-0 flex justify-center bg-gray-800 text-white w-full py-4 z-20" style="z-index: 20;">
+    <p>© 2024 Adbrotisers. All rights reserved.</p>
+  </footer>
 </body>
 </html>
