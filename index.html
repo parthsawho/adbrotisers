@@ -1,82 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="output.css">
-  <title>Adbrotisers</title>
-  <style>
-@font-face {
-    font-family: 'poppins';
-    src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
-         url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-}
-      
-
-  @keyframes verticalGradientAnimation {
-            0% {
-                background-position: 120% 0%;
-            }
-            100% {
-                background-position: 0% 120%;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    
+    <title>Adbrotisers</title>
+    <style>
+                @font-face {
+        font-family: 'poppins';
+        src: url('./Poppins/Poppins-Bold.ttf') format('truetype');
         }
-        .gradient-text {
-            background: linear-gradient(transparent, white);
-            background-size: 100% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: verticalGradientAnimation 3s ease-in forwards;
+        @font-face {
+        font-family: 'poppins';
+        src: url('./Poppins/Poppins-Regular.ttf') format('truetype');
         }
-        @media (max-width: 767px) {
-  .hide-on-small-screen {
-    display: none;
-  }
-}
-
-    </style>
+        @font-face {
+        font-family: 'poppins';
+        src: url('./Poppins/Poppins-Medium.ttf') format('truetype');
+        }
+        @font-face {
+        font-family: 'poppins';
+        src: url('./Poppins/') format('truetype');
+        }
+                .font-custom {
+        font-family: 'Poppins', sans-serif;
+        }
+        .hover-parent:hover .hover-target {
+        text-shadow: 0 10px 6px rgba(249, 249, 249, 0.2);
+    }
+        .shadow-box { 
+            box-shadow: 0px 10px 5px rgba(0, 24, 91, 0.7);
+        }
+    </style>    
 </head>
-<body class="bg-blue-800 font-poppins" style="font-family: 'poppins';">
-  <nav class=" bg-transparent  pt-3 pr-9 ">
-    <ul class=" container flex justify-end space-x-5 top-3 font-semibold text-[18px] text-white  tracking-[-0.03em] " >
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110 " >home</li>
-      <li class= "hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">about</li>
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110">services</li>
-      <li class="hover:text-white transition-transform duration-300 ease-in-out transform hover:scale-110" >contact</li>
-    </ul>
-  </nav> 
-  
-  <div class=" relative">
-    <h1 class="absolute inset-x-0 top-1/2 text-center transform -translate-y-1/2 mt-[180px] text-[75px] font-bold   text-white z-10 " style="font-family:poppins;">ADBROTISERS</h1>
-    <p class="absolute inset-x-0 top-1/2 text-center transform -translate-y-1/2 mt-[230px] ml-[255px] text-white text-[19px] gradient-text z-10  ">WE HELP YOU EXIST LOUD</p>
-  </div>
+<body class="bg-blue-600 font-custom">
+    <nav class="">
+        <ul class="flex flex-row justify-end gap-4 text-white font-bold absolute inset-x-0 top-1 ">
+            <li class="hover:bg-white hover:bg-opacity-10 rounded-lg p-1 "><a href="#home">home</a></li>
+                <li class="hover:bg-white hover:bg-opacity-10 rounded-lg p-1"><a href="">about</a></li>
+                    <li class="hover:bg-white hover:bg-opacity-10 rounded-lg p-1"><a href="">work</a></li>
+                        <li class="hover:bg-white hover:bg-opacity-10 rounded-lg p-1"><a href="">contact</a><li>
+        </ul>
+    </nav>
+
+
+    <main id="home" class=" mt-20 " >
+        <div class=" justify-center items-center md:pr-28 hover-parent " style=" display: grid; grid-template-columns: 2fr 1fr; "  >
+            <div class="flex flex-col justify-self-end items-center mt-8 h-38 sm:gap-1 ">
+                <div class=" md:text-[60px] sm:text-[55px] text-[40px]   font-bold  md:-mb-7 sm:-mb-6 -mb-3 hover-target" >
+                    <h1 class="text-white   ">ADBROTISERS</h1>
+                </div>
+                <h2 class="  md:text-[20px] sm:text-[15px] text-[16px]  text-cyan-300 self-end ">we help you exist loud</h2>
+            </div>
+                <div>
+                    <div class="flex   ">
+                        <div class=" max-w-36 ">
+                            <img  class="hover-parent " src="images/adbro (4).png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+            <div class="justify-center items-center relative top-16  gap-4 md:gap-8  " style=" display: grid ;     grid-template-columns: 1fr 3fr;">
+                <div class="max-w-44 justify-self-end flex pl-8">
+                    <img class="" src="images/adbro (5).png" alt="">
+                </div>
+                <div class="text-cyan-300 md:text-2xl sm:text-xl  md:font-bold    sm:font-semibold font-medium flex ">
+                    <h2>
+                        we help our clients with <br> our dedication and creativity.
+                    </h2>
+                </div>
+            </div>
+    </main>
+
+    <!-- <div class="grid grid-flow-col justify-center relative sm:gap-12 gap-4 top-44 pb-10 text-white sm:font-bold  text-center">
+        <div class="bg-blue-700 sm:h-36 h-24 sm:w-40 w-28 flex justify-center items-center shadow-box rounded-md hover:shadow-none active:bg-blue-600">DIGITAL <br> MARKETING</div>
+        <div class="bg-blue-700 sm:h-36 h-24 sm:w-40 w-28 flex justify-center items-center shadow-box hover:shadow-none rounded-md active:bg-blue-600 ">ADS <br> CREATION</div>
+        <div class="bg-blue-700 sm:h-36 h-24 sm:w-40 w-28 flex justify-center items-center  shadow-box hover:shadow-none rounded-md active:bg-blue-600   ">INFLUENCER <br> MARKETING</div>
+        </div> -->
+                
+        <div class="justify-center items-center relative top-20 pt-16 gap-4 md:gap-8  " style=" display: grid ;     grid-template-columns: 1fr 3fr;">
+            <div class="max-w-44 justify-self-end flex pl-8">
+                <img class="" src="images/adbro (7).png" alt="">
+            </div>
+            <div class="text-cyan-300 md:text-4xl sm:text-3xl  md:font-bold    sm:font-semibold  text-3xl font-bold flex ">
+                <h2 class="">
+                    DIGITAL MARKETING
+                </h2>
+            </div>
+
+           
+                
+          
+            
     
-  <img class="max-w-40 absolute hide-on-small-screen z-10 " style="margin-left: 75px; margin-top:90px ;" src="images/Untitled design (2).png" alt="">
-    
-  <div class="relative flex items-center justify-center">
-    <p class="absolute text-center font-semibold  text-white text-[19px] tracking-widest z-10 " style="margin-top: 750px; letter-spacing: 0.4px;" >we aim to bring great results for our clients <br>
-      through our
-      creativity and dedication</p>
-  </div>
-  <div class="bg-cover bg-center z-0 absolute ">
-      <img class="ml-30 " src="images/background (1).svg" alt="">
-    
-    </div>
-    <div class="flex justify-center flex-wrap ">
-    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 mt-[520px] shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
-      <h1 class="font-bold text-white text-[18px]">ARTIST MANAGEMENT</h1>
-    </div>
-    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 mt-[520px] shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
-      <h1 class="font-bold text-white text-[18px]">INFLUENCER MARKETING</h1>
-    </div>
-    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 lg:mt-[520px] mt-6 shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
-      <h1 class="font-bold text-white text-[18px]">ADVERTISING AGENCY</h1>
-    </div>
-    <div class=" relative box-border w-[260px] h-[190px]  bg-gradient-to-b from-[rgba(171,50,237,0.42)] to-[rgba(60,70,255,0.42)] backdrop-blur-[10px] rounded-[30px] flex items-center justify-center ml-7 z-20 lg:mt-[520px] mt-6 shadow-lg hover:bg-gradient-to-b hover:from-blue-500 hover:to-blue-900 hover:shadow-[20px]">
-      <h1 class="font-bold text-white text-[18px]">DIGITAL MARKETING</h1>
-    </div>
-    </div>
-    </div>
 </body>
 </html>
